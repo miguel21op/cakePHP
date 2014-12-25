@@ -1,3 +1,6 @@
 /*
 !.gitignore
 !app/View/
+!app/View/*
+!app/Model
+!app/Model/*
