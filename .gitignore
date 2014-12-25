@@ -1,0 +1,8 @@
+/*
+!.gitignore
+!app/*
+!/app/View/
+!/app/Controller/
+!/app/Model/
+!/app/Config/
+!/app/webroot/
