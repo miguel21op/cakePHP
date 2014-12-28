@@ -87,6 +87,32 @@ class PostsController extends AppController {
 	}
 
 /**
+ * pay method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function pay($id = null) {
+		if (!$this->Post->exists($id)) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->Post->save($this->request->data)) {
+				$this->Session->setFlash(__('The post has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+			}
+		} else {
+			$options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
+			$this->request->data = $this->Post->find('first', $options);
+		}
+		$users = $this->Post->User->find('list');
+		$this->set(compact('users'));
+	}
+
+/**
  * delete method
  *
  * @throws NotFoundException
@@ -98,6 +124,7 @@ class PostsController extends AppController {
 		if (!$this->Post->exists()) {
 			throw new NotFoundException(__('Invalid post'));
 		}
+		
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Post->delete()) {
 			$this->Session->setFlash(__('The post has been deleted.'));
