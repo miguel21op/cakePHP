@@ -41,3 +41,7 @@
  * the built-in default routes.
  */
 	require CAKE . 'Config' . DS . 'routes.php';
+
+
+Router::connect('/painel-administracao', array('controller' => 'dashboard', 'action' => 'index','admin'=>true));
+Router::connect('/login', array('controller' => 'users', 'action' => 'login'));

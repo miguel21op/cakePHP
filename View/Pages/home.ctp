@@ -11,7 +11,7 @@ endif;
 
 App::uses('Debugger', 'Utility');
 ?>
-<h2>A minha primeira App feita no Cake</h2>
+<h2>Seguro de Proteção Jurídica</h2>
 
 
 <p>
@@ -19,7 +19,7 @@ App::uses('Debugger', 'Utility');
 if (version_compare(PHP_VERSION, '5.2.8', '>=')):
 	echo '<span class="notice success elos">';
 	//	echo __d('cake_dev', 'Your version of PHP is 5.2.8 or higher.');
-		echo $this->Html->link('Acrescentar utilizador', array('controller' => 'users', 'action' => 'add','class' => 'class_link')); 
+		echo $this->Html->link('Fazer simulações', array('controller' => 'users', 'action' => 'add','class' => 'class_link')); 
 	echo '</span>';
 else:
 	echo '<span class="notice">';
@@ -32,7 +32,7 @@ endif;
 	<?php
 	if (is_writable(TMP)):
 		echo '<span class="notice success elos">';
-			echo $this->Html->link('Acrescentar posts', array('controller' => 'posts', 'action' => 'add','class' => 'class_link'));
+			echo $this->Html->link('Login no backoffice', array('controller' => 'users', 'action' => 'login','class' => 'class_link'));
 		echo '</span>';
 	else:
 		echo '<span class="notice">';

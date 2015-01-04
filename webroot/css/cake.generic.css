@@ -756,3 +756,136 @@ pre {
 	text-decoration:underline;
 	cursor:pointer;
 }
+/* after code ***************/
+.right{
+
+	width:400px!important;
+}
+#container{
+   min-width:900px !important;
+
+}
+.backbt a{
+  	background: red !important;
+  	color:white !important;
+  	font-style:normal !important;
+  	font-size:1em;
+  	text-decoration:none !important;
+  	text-shadow:red 0 0 0 !important;
+  }
+
+.sideright{
+float:right;
+width:80%;
+-webkit-box-sizing: border-box;  
+-moz-box-sizing: border-box;     
+box-sizing: border-box;  
+padding:6px;
+}
+.sideright h3{
+	color:#003D4C;
+	font-size:1.6em;
+	text-align: center;
+	margin-top: 20px;
+}
+.leftp{
+	margin-left:22px !important;
+}
+#content{
+	min-width: 1000px !important;
+}
+/* tabela */
+.dashtable{
+	width:846px;
+	margin:50px auto 30px auto;
+	display: block;
+	overflow:hidden;
+	position: relative;
+	font-weight:normal !important;
+}
+.header_t{
+	width:160px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	background: #003D4C;
+	color:white;
+	display: inline-block;
+	border-right:1px solid white;
+}
+.header_t:first-child, ul.side_t{
+	width:222px;
+}
+.header_t:nth-child(2){
+	width:300px;
+	margin-left:0;
+}
+.header_t:last-child{
+	border:none;
+}
+ul.side_t{
+	height:auto;
+	margin-left:0;
+	list-style-type: none;
+	padding-left: 0;
+	background: #003D4C;
+	color:white;
+	text-align:left;
+	position: absolute;
+	overflow: hidden;
+	margin-top:1px; /* linha em cima... */
+}
+
+ul.side_t li{
+	border-bottom:1px solid white;
+	width:100%;
+	line-height: 30px;
+	height:30px;
+	-webkit-box-sizing: border-box;  
+	-moz-box-sizing: border-box;     
+	box-sizing: border-box;
+	margin:0;
+	padding-left:6px; 
+}
+ul.side_t li:last-child{
+	border:none;
+}
+#data_block{
+ 	width:calc(100% - 223px);
+ 	-webkit-box-sizing: border-box;  
+	-moz-box-sizing: border-box;     
+	box-sizing: border-box;
+ 	height:119px;
+ 	margin-left:222px;
+ 	overflow: hidden;
+ 	border: 1px solid #003D4C;
+}
+.data_line{
+	width:100%;
+	height:29px;
+	line-height: 30px !important;
+	border-bottom:1px solid #003D4C;
+}
+.data_elem{
+	display: inline-block;
+	text-align:right;
+	width:156px;
+	border-right:1px solid  #003D4C;
+	padding-right:4px;
+	-webkit-box-sizing: border-box;  
+	-moz-box-sizing: border-box;     
+	box-sizing: border-box;
+}
+.prod{
+	width:301px;
+}
+.sel{
+	width:154px;
+	border-right:none;
+}
+
+
+
+
+
+

@@ -142,7 +142,7 @@
  * Set to an array of prefixes you want to use in your application. Use for
  * admin or other prefixed routes.
  *
- * 	Routing.prefixes = array('admin', 'manager');
+   	Routing.prefixes = array('admin', 'manager');
  *
  * Enables:
  *	`admin_index()` and `/admin/controller/index`
@@ -150,6 +150,7 @@
  *
  */
 Configure::write('Routing.prefixes', array('admin'));
+Configure::write('Routing.admin','admin');
 
 /**
  * Turn off all caching application-wide.

@@ -73,4 +73,10 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+	public function admin_home() {
+
+		$this->redirect('/');
+
+	}
 }
